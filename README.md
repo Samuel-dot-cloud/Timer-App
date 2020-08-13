@@ -5,7 +5,7 @@ The project is titled 'Timer-App'. For more information check [this](https://med
 ## DESCRIPTION OF PROJECT.
 The project is a simple desktop application that serves as a timer:medal_military::medal_military::trophy:
  <p float="centre">
-   <img src="pics/pic.png" width="100" />
+   <img src="pics/pic.png" width="100%" height="100%" />
 </p>
 
 ### PROJECT SETUP INSTRUCTIONS.
