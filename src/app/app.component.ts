@@ -15,6 +15,7 @@ export class AppComponent {
   max     = 1;
   current = 0;
 
+  // tslint:disable-next-line:typedef
   start() {
     const interval = Observable.interval(100);
 
@@ -25,11 +26,13 @@ export class AppComponent {
   }
 
    /// finish timer
+  // tslint:disable-next-line:typedef
   finish() {
     this.current = this.max;
   }
 
   /// reset timer
+  // tslint:disable-next-line:typedef
   reset() {
     this.current = 0;
   }
@@ -37,14 +40,17 @@ export class AppComponent {
 
   /// Getters to prevent NaN errors
 
+  // tslint:disable-next-line:typedef
   get maxVal() {
     return isNaN(this.max) || this.max < 0.1 ? 0.1 : this.max;
   }
 
+  // tslint:disable-next-line:typedef
   get currentVal() {
     return isNaN(this.current) || this.current < 0 ? 0 : this.current;
   }
 
+  // tslint:disable-next-line:typedef
   get isFinished() {
     return this.currentVal >= this.maxVal;
   }
